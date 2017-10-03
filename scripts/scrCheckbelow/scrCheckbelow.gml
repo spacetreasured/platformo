@@ -1,0 +1,6 @@
+return 
+(place_meeting(x, y+1, oHardground))
+or 
+((place_meeting(x, y+1, oSoftground) && !place_meeting(x, y, oSoftground) && vsp >= 0));
+
+//Returns if you're touching a non-jumpthru ground (hardground) or a jumpthru ground (softground)
