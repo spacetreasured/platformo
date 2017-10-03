@@ -136,7 +136,7 @@ if action == "dodge"
     }
 	if abs(hsp) > 5
 	{
-		instance_create_depth(random_range(x-45,x+45),y,choose(-2,2),fxDodgedust);
+		//instance_create_depth(random_range(x-45,x+45),y,choose(-2,2),fxDodgedust);
 	}
 }
 
