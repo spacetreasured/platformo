@@ -251,3 +251,15 @@ if charge > 0
 		y -= 6;
 	}
 }
+
+
+/*HOPPING WHEN RUNNING
+if walkbob == "up" && action == "run"
+{
+	sprY = y-15;
+}
+else
+{*/
+	sprY = y;
+//}
+sprX = x;

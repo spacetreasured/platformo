@@ -22,3 +22,5 @@ charge = 0;
 coloroverlay = c_white;
 walktimer = hsp;
 walkbob = "down";
+sprY = y;
+sprX = x;

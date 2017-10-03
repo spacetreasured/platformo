@@ -7,4 +7,4 @@ else
     coloroverlay = c_white;
 }
 
-draw_sprite_ext(sprite_index,0,x,y,sprXscale,sprYscale,0,coloroverlay,1);
+draw_sprite_ext(sprite_index,0,sprX,sprY,sprXscale,sprYscale,0,coloroverlay,1);
