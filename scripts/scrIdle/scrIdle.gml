@@ -24,3 +24,6 @@ else
 }
 
 canwalljump = 0;
+
+walkbob = "down";
+walktimer = 0;

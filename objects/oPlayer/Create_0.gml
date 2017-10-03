@@ -20,3 +20,5 @@ die = 0;
 flash = 0;
 charge = 0;
 coloroverlay = c_white;
+walktimer = hsp;
+walkbob = "down";

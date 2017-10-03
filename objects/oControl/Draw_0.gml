@@ -13,4 +13,6 @@ if instance_exists(oPlayer)
     draw_text(50,250,"wjcounter: " + string(oPlayer.wjcounter));
     draw_text(50,275,"pcounter: " + string(oPlayer.pcounter));
     draw_text(50,300,"charge: " + string(oPlayer.charge));
+	draw_text(50,325,"walktimer: " + string(oPlayer.walktimer));
+	draw_text(50,350,"walkbob: " + string(oPlayer.walkbob));
 }
