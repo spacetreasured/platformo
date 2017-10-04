@@ -275,7 +275,7 @@ if charge > 0
 	charge -= 1;
 	if action == "dive"
 	{
-		y -= 6;
+		sprYscale += 0.05;
 		sprite_index = sSquarecharge;
 	}
 }

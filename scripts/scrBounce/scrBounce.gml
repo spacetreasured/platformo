@@ -12,12 +12,12 @@ hsp = 0; //stops horizontal movement when you hit the ground
 
 if sprXscale > 0 //if you're facing right
 {
-	sprXscale = 1.8;
+	sprXscale = 1.7;
 }
 else
 {
-	sprXscale = -1.8;	
+	sprXscale = -1.7;	
 }
-sprYscale = 0.2;
+sprYscale = 0.3;
 
 invincible = 0;
