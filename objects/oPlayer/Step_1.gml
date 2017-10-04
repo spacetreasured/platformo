@@ -6,7 +6,15 @@ if !freeze
 	{
 		if canwalljump && vsp > 0 && action != "dive"
 		{
-			vsp = grav * 1.5;
+			vsp = grav * 1.5; //slows falling during wallgrab
+			if keyLeft
+			{
+				sprXscale = 1;
+			}
+			else
+			{
+				sprXscale = -1;
+			}
 		}
 		else if action != "dive"
 		{

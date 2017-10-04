@@ -56,7 +56,7 @@ else
 	}
 	else //If you're facing left
 	{
-		sprXscale *= -0.5;
+		sprXscale *= 0.5;
 		sprYscale = 1.7;
 	}
 
