@@ -2,7 +2,7 @@ if canwalljump == 0
 {
     if jumpbuffer > 0 //If you are allowed to jump by the jumpbuffer
     {
-        if action != "jump" && action != "bounce" //If you haven't jumped yet (can't double jump)
+        if action != "jump" && action != "bounce" && action != "dive"//If you haven't jumped yet (can't double jump)
         {
             vsp = oControl.jumpvar;
 			if sprXscale > 0 //If you're facing right
@@ -33,7 +33,7 @@ if canwalljump == 0
     }
     else //If you aren't allowed to jump by the jumpbuffer
     {
-        if action != "jump" && action != "bounce" //If you aren't already jumping and you haven't bounced
+        if action != "jump" && action != "bounce"  && action != "dive"//If you aren't already jumping and you haven't bounced
         {
             freeze = 6;
 			charge = 6;
