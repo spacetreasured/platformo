@@ -7,7 +7,7 @@ if freeze == 0
 
 flash = 5;
 
-//vsp = oControl.jumpvar * 0.35; //makes it bounce
+vsp = oControl.jumpvar * 0.35; //makes it bounce
 hsp = 0; //stops horizontal movement when you hit the ground
 
 if sprXscale > 0 //if you're facing right

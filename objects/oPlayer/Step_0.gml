@@ -90,10 +90,10 @@ if wjcounter <= 0
     wjcounter = 6;
 }
 
-//if !place_meeting(x,y,oHardground)
-//{
-    //canwalljump = 0; //Resets this so you can't wall jump out of thin air
-//}
+if !place_meeting(x-1,y,oHardground) && !place_meeting(x+1,y,oHardground)
+{
+    canwalljump = 0; //Resets this so you can't wall jump out of thin air
+}
 
 //SPRITE SCALING FOR JUMPING (SQUASH AND STRETCH)
 if action != "dive"
