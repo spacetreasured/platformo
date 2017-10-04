@@ -58,13 +58,9 @@ if action == "dive" && !freeze
 {
 	if sprXscale > 0
 	{
-		sprXscale = 0.3;
+		sprXscale *= 0.8;
 	}
-	else
-	{
-		sprXscale = -0.3;
-	}
-    sprYscale += 0.5;
+    sprYscale *= 1.2;
 }
 
 //SETTING BACK TO IDLE AFTER BOUNCE

@@ -37,8 +37,8 @@ if grounded
 
 		if walkbob == "down"
 		{
-			sprYscale = 0.75;
-			sprXscale = -1.25;
+			sprYscale = 0.8;
+			sprXscale = -1.2;
 		}
 		else
 		{
