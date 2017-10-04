@@ -272,7 +272,7 @@ if charge > 0
 		sprite_index = sSquarecharge;
 	}
 }
-else
+else if action != "dive" && action != "bounce"
 {
 	sprite_index = sSquare;
 }
