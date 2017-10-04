@@ -56,8 +56,11 @@ if(keyJumpR) //If you let go of the jump button, fall back down
 //STRETCH WHEN DIVING
 if action == "dive" && !freeze
 {
-	sprXscale *= 0.8;
-    sprYscale *= 1.2;
+	if abs(sprXscale) > 0.5
+	{
+		sprXscale *= 0.8;
+		sprYscale *= 1.2;
+	}
 }
 
 //SETTING BACK TO IDLE AFTER BOUNCE
