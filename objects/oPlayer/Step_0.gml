@@ -191,7 +191,6 @@ if grounded
     canparry = 1;
 }
 
-
 //LEVEL WRAPPING
 if x > 1460
 {
@@ -277,7 +276,12 @@ if charge > 0
 	if action == "dive"
 	{
 		y -= 6;
+		sprite_index = sSquarecharge;
 	}
+}
+else
+{
+	sprite_index = sSquare;
 }
 
 

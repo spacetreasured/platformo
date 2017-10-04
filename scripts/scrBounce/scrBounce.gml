@@ -2,7 +2,7 @@ action = "bounce";
 instance_create_depth(x,y,0,fxShake);
 if freeze == 0
 {
-    freeze = 1;
+    freeze = 6;
 }
 
 flash = 5;

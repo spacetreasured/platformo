@@ -50,10 +50,13 @@ if grounded
 }
 else
 {
-    if action != "walljump" && action != "dive" //&& canwalljump != 1
+    if action != "walljump" && action != "dive"
     {
         hsp += 2;
-		//sprXscale = 1;//sets direction in air
+		if canwalljump == 0
+		{
+			sprXscale = 1;//sets direction in air
+		}
     }
 	
 }

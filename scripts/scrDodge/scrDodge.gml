@@ -26,7 +26,14 @@ else
             action = "parry";
             pcounter = 10;
             vsp = oControl.jumpvar * 0.5;
-            sprXscale = 0.3;
+			if sprXscale > 0
+			{
+				sprXscale = 0.3;
+			}
+			else
+			{
+				sprXscale = -0.3;
+			}
             sprYscale = 1.7;
             canparry = 0;
         }

@@ -21,9 +21,9 @@ if canwalljump == 0
         {
             if action != "bounce" //If you haven't bounced (can't dribble)
             {
-                freeze = 6;
-				charge = 6;
-                flash = 5;
+                freeze = 10;
+				charge = 10;
+                flash = 9;
                 vsp = oControl.divevar;
 				hsp = 0;
                 action = "dive"; //Then dive
@@ -64,12 +64,10 @@ else
     {
         hsp = 20;
         action = "walljump";
-        image_index = 0;
     }
     else
     {           
         hsp = -20;
         action = "walljump";
-        image_index = 0;
     }
 }
