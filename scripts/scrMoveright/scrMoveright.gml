@@ -17,12 +17,12 @@ if grounded
 	
 	if abs(hsp) > 0
 	{
-		if walktimer < 4
+		if walktimer < 5
 		{
 			walktimer += 1;
 		}
 
-		if walktimer == 4
+		if walktimer == 5 
 		{
 			walktimer = 0;
 			if walkbob == "down"
@@ -55,5 +55,3 @@ else
         hsp += 2;
     }
 }
-
-image_xscale = 1;

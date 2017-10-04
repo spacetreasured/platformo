@@ -56,12 +56,19 @@ if(keyJumpR) //If you let go of the jump button, fall back down
 //STRETCH WHEN DIVING
 if action == "dive" && !freeze
 {
-	sprXscale = 0.3;
+	if sprXscale > 0
+	{
+		sprXscale = 0.3;
+	}
+	else
+	{
+		sprXscale = -0.3;
+	}
     sprYscale += 0.5;
 }
 
 //SETTING BACK TO IDLE AFTER BOUNCE
-if action == "bounce" && sprXscale == 1
+if action == "bounce" && abs(sprXscale) == 1
 {
 	action = "idle";
 }
@@ -102,19 +109,40 @@ if action != "dive"
     {
         sprYscale -= 0.1;
     }
-    if sprYscale < 1
+    if sprYscale < 1 && sprYscale > 0
     {
         sprYscale += 0.1;
     }
+	
+	if sprYscale < -1
+	{
+		sprYscale += 0.1;
+	}
+	
+	if sprYscale > -1 && sprYscale < 0
+	{
+		sprYscale -= 0.1;
+	}
 
     if sprXscale > 1
     {
         sprXscale -= 0.1;
     }
-    if sprXscale < 1
+    if sprXscale < 1 && sprXscale > 0
     {
         sprXscale += 0.1;
     }
+	
+	if sprXscale < -1
+	{
+		sprXscale += 0.1;
+	}
+	
+	if sprXscale > -1 && sprXscale < 0
+	{
+		sprXscale -= 0.1;
+	}
+	
 }
 
 //DODGE

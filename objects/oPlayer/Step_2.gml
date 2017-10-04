@@ -67,8 +67,16 @@ repeat (abs(v))
         vcollide = true;
 		if action != "bounce"
 		{
-			sprYscale = 0.5;
-			sprXscale = 1.5;
+			if sprXscale > 0 //if you're facing right
+			{
+				sprXscale = 1.5;
+				sprYscale = 0.5;
+			}
+			else //if you're facing left
+			{
+				sprXscale = -1.5;
+				sprYscale = 0.5;
+			}
 		}
         break;
     }

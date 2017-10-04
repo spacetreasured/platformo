@@ -5,8 +5,16 @@ if canwalljump == 0
         if action != "jump" && action != "bounce" //If you haven't jumped yet (can't double jump)
         {
             vsp = oControl.jumpvar;
-            sprXscale = 0.2;
-            sprYscale = 1.8;
+			if sprXscale > 0 //If you're facing right
+			{
+				sprXscale = 0.2;
+				sprYscale = 1.8;
+			}
+			else //If you're facing left
+			{
+				sprXscale = -0.2;
+				sprYscale = 1.8;
+			}
             action = "jump"; //Then jump
         }
         else //If you have jumped already
@@ -41,8 +49,17 @@ else
 {
     freeze = 2;
     vsp = oControl.jumpvar;
-    sprXscale *= 0.5;
-    sprYscale = 1.7;
+	if sprXscale > 0 //If you're facing right
+	{
+		sprXscale *= 0.5;
+		sprYscale = 1.7;
+	}
+	else //If you're facing left
+	{
+		sprXscale *= -0.5;
+		sprYscale = 1.7;
+	}
+
     if (keyLeft)
     {
         hsp = 20;

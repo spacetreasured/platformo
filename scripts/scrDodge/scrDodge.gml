@@ -2,16 +2,18 @@ if grounded
 {
     flash = 3;
     action = "dodge";
-    if image_xscale > 0 //If you're facing right
+    if sprXscale > 0 //If you're facing right
     {
         hsp = 32;
+		sprYscale = 0.3;
+		sprXscale = 1.7;
     }
     else //If you're facing left
     {
         hsp = -32;
+		sprYscale = 0.3;
+		sprXscale = -1.7;
     }
-    sprYscale = 0.3;
-    sprXscale = 1.7;
 }
 else
 {
