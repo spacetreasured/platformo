@@ -54,7 +54,10 @@ else
         hsp -= 2;
 		if canwalljump == 0
 		{
-			sprXscale = -1;//sets direction in air
+			if sprXscale > 0
+			{
+				sprXscale *= -1;//sets direction in air
+			}
 		}
     }
 }

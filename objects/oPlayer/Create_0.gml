@@ -24,3 +24,4 @@ walktimer = hsp;
 walkbob = "down";
 sprY = y;
 sprX = x;
+sprDirection = "right";

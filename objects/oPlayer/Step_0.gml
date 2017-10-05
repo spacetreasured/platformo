@@ -64,7 +64,7 @@ if action == "dive" && !freeze
 }
 
 //SETTING BACK TO IDLE AFTER BOUNCE
-if action == "bounce" && abs(sprXscale) == 1
+if grounded && action == "bounce"
 {
 	action = "idle";
 }

@@ -19,7 +19,7 @@ if canwalljump == 0
         }
         else //If you have jumped already
         {
-            if action != "bounce" //If you haven't bounced (can't dribble)
+            if action != "bounce"//If you haven't bounced (can't dribble)
             {
                 freeze = 10;
 				charge = 10;

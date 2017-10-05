@@ -17,9 +17,9 @@ if grounded
 }
 else
 {
-    if action != "jump" && action != "dive" && action != "bounce" && action != "parry" && action != "walljump"
+    if  action != "dive" && action != "bounce" && action != "parry" && action != "walljump"
     {
-        action = "idle";
+        action = "jump";
     }
 }
 
