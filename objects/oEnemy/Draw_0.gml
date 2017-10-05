@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,0,x,y,sprXscale,sprYscale,sprRotation,coloroverlay,1); //making x sprX and y sprY introduces some weirdness here
